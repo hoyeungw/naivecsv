@@ -42,12 +42,12 @@ fsPromise
   .then(text => {
     console.log(
       NaiveCsv.toRows(text, {
-        de: ',',
-        lf: '\r\n',
-        qt: '\"',
-        transpose: false,
-        decode: 'utf-8',
-        popBlank: true
+        de: ',', // delimiter
+        lf: '\r\n', // line-feed
+        qt: '\"', // quotation mark
+        transpose: false, // transpose the entire csv text as 2-d array
+        decode: 'utf-8', // appoint decoding as 'utf-8'
+        popBlank: true // delete blank trailing row
       }))
   })
 ```

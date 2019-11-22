@@ -4,7 +4,6 @@
   "description": "A light & simple parser of csv text",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
-  "browser": "dist/index.umd.js",
   "files": [
     "dist"
   ],
@@ -16,14 +15,14 @@
     "mocha": "mocha"
   },
   "dependencies": {
-    "iconv-lite": "^0.5.0"
+    "iconv-lite": "^0.5.0",
+    "veho": "^0.1.54",
+    "crostab": "^0.2.4"
   },
   "devDependencies": {
     "spettro": "^0.0.17",
     "xbrief": "^0.2.7",
-    "veho": "^0.1.54",
     "borel": "^0.1.11",
-    "crostab": "^0.2.4",
     "ora": "^4.0.3",
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-optional-chaining": "^7.6.0",

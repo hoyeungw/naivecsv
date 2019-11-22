@@ -1,30 +1,12 @@
 import pkg from './package.json'
 import { BabelLocal } from './build/BabelLocal'
-import resolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
-import commonjs from 'rollup-plugin-commonjs'
 
 const input = 'src/index.js'
 
 const externalDependencies = Object.keys(pkg.dependencies)
+
 export default [
-  {
-    input,
-    output: {
-      name: pkg.name,
-      file: pkg.browser,
-      format: 'umd' // browser-friendly UMD build
-    },
-    plugins: [
-      resolve(),
-      babel({
-        ...BabelLocal.base,
-        presets: BabelLocal.presets,
-        plugins: BabelLocal.plugins
-      }),
-      commonjs()
-    ]
-  },
   {
     input,
     external: externalDependencies,

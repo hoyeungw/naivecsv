@@ -26,16 +26,16 @@ BabelLocal.presets =
  */
 BabelLocal.plugins =
   [
-    // [
-    //   '@babel/plugin-transform-runtime',
-    //   {
-    //     'absoluteRuntime': false,
-    //     'corejs': false,
-    //     'helpers': false,
-    //     'regenerator': true,
-    //     'useESModules': false
-    //   }
-    // ],
+    [
+      '@babel/plugin-transform-runtime',
+      {
+        'absoluteRuntime': false,
+        'corejs': false,
+        'helpers': false,
+        'regenerator': true,
+        'useESModules': false
+      }
+    ],
     [
       '@babel/plugin-proposal-pipeline-operator',
       {
