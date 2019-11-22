@@ -1,0 +1,62 @@
+{
+  "name": "naivecsv",
+  "version": "0.0.1",
+  "description": "A light & simple parser of csv text",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build-rollup": "rollup -c",
+    "prepare": "npm run build-rollup",
+    "pub": "npm publish",
+    "test": "node -r @babel/register test/test.index.js",
+    "mocha": "mocha"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.5.0"
+  },
+  "devDependencies": {
+    "spettro": "^0.0.17",
+    "xbrief": "^0.2.7",
+    "veho": "^0.1.54",
+    "borel": "^0.1.11",
+    "crostab": "^0.2.4",
+    "ora": "^4.0.3",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@babel/plugin-external-helpers": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-pipeline-operator": "^7.5.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "@babel/runtime": "^7.6.2",
+    "mocha": "^6.2.1",
+    "rollup": "^1.20.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyeungw/naivecsv.git"
+  },
+  "keywords": [
+    "csv",
+    "parser"
+  ],
+  "author": {
+    "name": "Hoyeung Wong",
+    "email": "hoyeungw@outlook.com",
+    "url": "https://github.com/hoyeungw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoyeungw/naivecsv"
+  },
+  "homepage": "https://github.com/hoyeungw/naivecsv#readme"
+}
